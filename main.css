@@ -1,0 +1,285 @@
+.title-label {
+    color:goldenrod;
+    text-align: center;
+    font-size: 30px;
+    background-color:crimson;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.profile-pic-1 {
+    width: 50%;
+    position: relative;
+    top: 100px;
+    display: block;
+    margin: auto;
+    border: dashed 20px blue;
+    border-radius: 10px;
+
+}
+
+
+.table-1 .table-header { 
+    border: solid 5px black;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: blue;
+    color: yellow;
+
+}
+
+
+
+.table-1 {
+    border: solid 5px black;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: brown;
+    color: yellow;
+}
+
+.table-1 td {
+    border: solid 1px black;
+    width: 33.33%;
+}
+
+.button-group {
+    background-color: grey;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.fade-in-label {
+    background-color:darkgreen;
+    color: blue;
+    font-size: 28px;
+    text-align: center;
+    padding: 30px;
+    opacity: 0;
+    animation: FadeIn 1s ease-in forwards;
+}
+
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+        font-size: 5px;
+    }
+
+    to {
+        opacity: 1;
+        font-size: 40px;
+    }
+}
+
+.color-changing-label {
+    background-color: black;
+    color: red;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+    animation: colorChangeAnim 2s infinite;
+}
+
+@keyframes colorChangeAnim {
+    0%{
+        column-gap: red;
+    }
+
+    5%{
+        color: orangered;
+    }
+
+    10%{
+        color: coral;
+    }
+
+    15%{
+        color: orange;
+    }
+
+    20%{
+        color: yellow;
+    }
+
+    25%{
+        color: gold;
+    }
+
+    30%{
+        color: green;
+    }
+
+    35%{
+        color: lime;
+    }
+
+    40%{
+        color: cadetblue;
+    }
+
+    45%{
+        color: aquamarine;
+    }
+
+    50%{
+        color: blue;
+    }
+
+    55%{
+        color:mediumpurple;
+    }
+
+    60%{
+        color: blueviolet;
+    }
+
+    65%{
+        color: darkmagenta;
+    }
+
+    70%{
+        color: fuchsia;
+    }
+
+    75%{
+        color: hotpink;
+    }
+
+    80%{
+        color: deeppink;
+    }
+
+    85%{
+        color: mediumvioletred;
+    }
+    
+    90%{
+        color: brown;
+    }
+    
+    95%{
+        color: darkred;
+    }
+
+    100%{
+        color: crimson;
+    }
+
+
+    
+}
+
+
+.horizontal-sliding-label {
+    background-color: orange;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+    animation: slideInAnim 1s ease-out;
+}
+
+@keyframes slideInAnim {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.horizontal-sliding-label-2 {
+    background-color: orange;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+    animation: slideInAnim2 1s ease-out;
+}
+
+@keyframes slideInAnim2 {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+.container {
+    background-color: darkorange;
+    height: 30vh; /* vh - veiwport height */
+    align-items: center;
+    justify-content: center;
+    display: flex; /* Allows us to align items with an unknown size in a container*/
+}
+
+.spin{
+    color: blanchedalmond;
+    font-size: 30px;
+    animation: spin-anim 1s linear infinite; /* linear = constant speed*/
+}
+
+@keyframes spin-anim {
+    from{
+        transform: rotate(0deg);
+    }
+
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.pulsate {
+    color:  cornsilk;
+    font-size: 2rem; /* rem - a unit of measurement for size */
+    animation: pulsating-anim 1s ease-in-out infinite;
+}
+
+@keyframes pulsating-anim { 
+    0% {
+        transform: scale(1); /* default size */
+    }
+
+    50% {
+        transform: scale(1.5); /* 50% larger */
+    }
+
+    100% {
+        transform: scale(1); 
+    }
+}
+
+.glow {
+    background-color: cyan;
+    font-size: 48px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 40px 20px;
+    border-radius: 20px;
+    animation: glowing-anim 1s alternate infinite;
+}
+
+@keyframes glowing-anim {
+    0%, 100%{
+        box-shadow:  0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #ff0;
+    }
+
+    50%{
+        box-shadow:  0 0 20px #ff0, 0 0 40px #ff0, 0 0 60px #ff0;
+    }
+}
